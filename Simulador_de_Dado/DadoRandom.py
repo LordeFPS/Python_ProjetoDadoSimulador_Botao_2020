@@ -12,15 +12,25 @@ import os     # importa uma opção para limpar a tela
 
 import time
 
+def tlimpa(): # cria um  um procedimento que executa o código abaixo 
+    
+    time.sleep(2) # aqi conseguimos fazer um temporizador de tela
+    
+    os.system('cls' if os.name == 'nt' else 'clear') # com esse código conseguimos limpar a tela
+
+    #print("Pressione ENTER!")
+    #input()
 
 while True:
     
-    time.sleep(1) # aqi conseguimos fazer um temporizador de tela
+    # time.sleep(1) # aqi conseguimos fazer um temporizador de tela
     
-    os.system('clear') # os.system('cls' if os.name == 'nt' else 'clear') # com esse código conseguimos limpar a tela
+    # os.system('cls' if os.name == 'nt' else 'clear') # com esse código conseguimos limpar a tela
 
-    print("Pressione ENTER!")
-    input()
+    # print("Pressione ENTER!")
+    # input()
+
+    
 
     print('''
     ---------------------------------------
@@ -45,35 +55,46 @@ while True:
         
         dado = random.randint(1 , 4)
 
-        print(f"Valor: {dado}") # exibir com f-string
         
-
+        print("\n")
+        print(f"Valor: {dado}") # exibir com f-string
+   
     elif opcao == '2':
         dado = random.randint(1 , 6)
 
-        print(f"Valor: {dado}")
+        print("\n")
+        print(f"Valor: {dado}") # exibir com f-string
     elif opcao == '3':
         dado = random.randint(1 , 8)
 
-        print(f"Valor: {dado}")
+        print("\n")
+        print(f"Valor: {dado}") # exibir com f-string
     elif opcao == '4':
         dado = random.randint(1 , 10)
 
-        print(f"Valor: {dado}")
+        print("\n")
+        print(f"Valor: {dado}") # exibir com f-string
     elif opcao == '5':
         dado = random.randint(1 , 12)
 
-        print(f"Valor: {dado}")
+        print("\n")
+        print(f"Valor: {dado}") # exibir com f-string
     elif opcao == '6':
         dado = random.randint(1 , 20)
 
-        print(f"Valor: {dado}")
+        print("\n")
+        print(f"Valor: {dado}") # exibir com f-string
     elif opcao == '7':
         dado = random.randint(1 , 100)
 
-        print(f"Valor: {dado}")
+        print("\n")
+        print(f"Valor: {dado}") # exibir com f-string
     elif opcao == '8':
         print("Obrigado usar nosso Programa!")
         break
     else:
         print("Opção Inválida!")
+    
+    tlimpa()
+
+print("Olá mundo")
