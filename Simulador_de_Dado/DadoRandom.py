@@ -10,11 +10,11 @@ import random # importa uma biblioteca aleatoriedade
 
 import os     # importa uma opção para limpar a tela
 
-import time
+import time   # importa opções de timer 
 
 def tlimpa(): # cria um  um procedimento que executa o código abaixo 
     
-    time.sleep(2) # aqi conseguimos fazer um temporizador de tela
+    time.sleep(2) # conseguimos fazer um temporizador de tela
     
     os.system('cls' if os.name == 'nt' else 'clear') # com esse código conseguimos limpar a tela
 
@@ -95,6 +95,6 @@ while True:
     else:
         print("Opção Inválida!")
     
-    tlimpa()
+    tlimpa() # def feito no começo do código
 
 print("Olá mundo")
