@@ -48,8 +48,8 @@ while True:
     ---------------------------------------
     '''
     )
-        
-    opcao = input()
+    # print(f'Escolha um numero:')  
+    opcao = input("Escolha um numero:")
     
     if opcao == '1':
         
@@ -97,4 +97,3 @@ while True:
     
     tlimpa() # def feito no começo do código
 
-print("Olá mundo")
